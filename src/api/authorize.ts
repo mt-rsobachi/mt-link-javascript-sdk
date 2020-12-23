@@ -42,6 +42,7 @@ export default function authorize(
     codeChallenge,
     isNewTab,
     state,
+    continue: continuePath,
     ...rest
   } = options;
 
@@ -66,6 +67,7 @@ export default function authorize(
     state,
     country,
     locale,
+    continue: continuePath || undefined,
     configs: generateConfigs(mergeConfigs(storedOptions, rest)),
   });
 

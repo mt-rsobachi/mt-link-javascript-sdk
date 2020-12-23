@@ -46,6 +46,7 @@ export interface AuthorizeOptions extends OAuthSharedParams, ConfigsOptions, Aut
     scopes?: Scopes;
     codeChallenge?: string;
     pkce?: boolean;
+    continue?: string;
 }
 export declare type Mode = 'production' | 'staging' | 'develop' | 'local';
 export declare type InitOptions = Omit<Omit<Omit<AuthorizeOptions, 'forceLogout'>, 'codeChallenge'>, 'pkce'> & PrivateParams & {

@@ -70,6 +70,7 @@ export interface AuthorizeOptions
   scopes?: Scopes;
   codeChallenge?: string;
   pkce?: boolean;
+  continue?: string;
 }
 
 export type Mode = 'production' | 'staging' | 'develop' | 'local';
